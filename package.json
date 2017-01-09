@@ -1,0 +1,20 @@
+{
+	"bin": {
+		"beepscript": "./index.js"
+	},
+	"dependencies": {
+		"waveheader": "^0.0.2"
+	},
+	"description": "Script language to create wav musics",
+	"keywords": [
+		"music",
+		"language",
+		"script",
+		"beep",
+		"beepscript"
+	],
+	"license": "ISC",
+	"main": "index.js",
+	"name": "beepscript",
+	"version": "1.0.25"
+}
