@@ -40,15 +40,10 @@ mymusic.bs
 ```
 main {                     /* Main sequence */
     play('sequence1', 3)   /* Play the sequence1 3 times */
-    beep(600)              /* Beep 600 Hz frequency for 1 second */
-    beep()                 /* Beep 440 Hz frequency for 1 second */
+    beep(600, 1)           /* Beep 600 Hz frequency for 1 second */
     sleep(0.5)             /* Sleep for 0.5 seconds */
-    beep(400, 0.3)         /* Beep 400 Hz frequency for 0.3 seconds */
-    sleep()                /* Sleep for 1 second */
-    play('sequence2')      /* Play the sequence2 one time */
+    play('sequence2', 1)   /* Play the sequence2 one time */
     note('C#', 3, 0.5)     /* Play the note C# in octave 3 for 0.5 seconds */
-    note('B', 5)           /* Play the note B in octave 5 for 1 second */
-    note()                 /* Play the note A in octave 4 for 1 second */
 }                          /* Close main sequence */
 
 sequence1 {
@@ -61,7 +56,7 @@ sequence1 {
 
 sequence2 {
     note('C', 4, 0.5)
-    note('F#', 3)
+    note('F#', 3, 1)
     note('F', 4, 0.3)
     sleep(2) 
 }
