@@ -1,13 +1,13 @@
 # BeepScript
 
-> It may not work in Windows.
+> It may not work on Windows.
 
 Script language to create wave musics
 
 # How to install
 
 ```sh
-npm install -g beepscript
+[sudo] npm install -g beepscript
 ```
 
 # How to compile
