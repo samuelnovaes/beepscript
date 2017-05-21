@@ -25,7 +25,8 @@ sequence {
 - **sleep(duration)** (Duration in seconds)
 - **play(sequence, loop)** (Sequence must be betwen quotes)
 - **note(note, octave, duration)** (Note must be betwen quotes, octave is an integer number, duration in secods)
-- **Supported notes:** C, C#, D, D#, E, F, F#, G, G#, A, A#, B
+
+ Supported notes: C, C#, D, D#, E, F, F#, G, G#, A, A#, B
 
 # Comments
 ```javascript
