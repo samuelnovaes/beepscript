@@ -14,26 +14,27 @@ beepscript mymusic.bs
 ```
 It will generate a .wav file automatically in the same directory
 
-#Syntaxe
+# Syntaxe
 ```javascript
 sequence {
     /*Commands...*/
 }
 ```
-#Commands
+# Commands
 - **beep(frequency, duration)** (Duration in seconds, frequency in Hz)
 - **sleep(duration)** (Duration in seconds)
 - **play(sequence, loop)** (Sequence must be betwen quotes)
 - **note(note, octave, duration)** (Note must be betwen quotes, octave is an integer number, duration in secods)
 - **Supported notes:** C, C#, D, D#, E, F, F#, G, G#, A, A#, B
 
-#Comments
+# Comments
 ```javascript
 /* This is a comment */
 ```
 Comments must be between /* and */
 
-#Example
+# Example
+
 mymusic.bs
 ```
 main {                     /* Main sequence */
