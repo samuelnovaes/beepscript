@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 var header = require("waveheader");
 var fs = require("fs");
 var path = require("path");
@@ -33,7 +34,7 @@ main.forEach(function(item){
 });
 
 
-var wavFile = path.dirname(process.argv[2])+"/"+path.parse(process.argv[2]).name+".wav";
+var wavFile = path.join(path.dirname(process.argv[2]), path.parse(process.argv[2]).name+".wav");
 var writer = new fs.createWriteStream(wavFile);
 writer.write(header());
 writer.write(new Buffer(res));
