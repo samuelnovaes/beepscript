@@ -24,23 +24,6 @@ var tone = {
 	}
 };
 
-var res = [];
-var fileString = fs.readFileSync(process.argv[2], "utf-8");
-fileString = ('{"'+fileString.toLowerCase().split('\n').join('').split('\t').join('').split(' ').join('').split('"').join("'").split(/\/\*.+?\*\/|\/\/.*(?=[\n\r])/g).join('').split('{').join('":"{').split('{').join('[').split('}').join(']","').split(')').join('),').split(',]').join(']')+'}').split(',"}').join('}');
-var objeto = JSON.parse(fileString);
-var main = eval(objeto["main"]);
-main.forEach(function(item){
-	res = res.concat(item);
-});
-
-
-var wavFile = path.join(path.dirname(process.argv[2]), path.parse(process.argv[2]).name+".wav");
-var writer = new fs.createWriteStream(wavFile);
-writer.write(header());
-writer.write(new Buffer(res));
-writer.end();
-console.log("Script compiled to "+wavFile);
-
 function generateCycle(cycle, volume) {
 	var data = [];
 	var tmp;
@@ -50,6 +33,7 @@ function generateCycle(cycle, volume) {
 	}
 	return data;
 }
+
 function play(index, loop){
 	loop = loop || 1;
 	var res = [];
@@ -61,9 +45,11 @@ function play(index, loop){
 	}
 	return res;
 }
+
 function beep(freq, time){
 	return tone.play(freq, time);
 }
+
 function note(nota, octavo, time){
 	if(nota != undefined){
 		octavo = octavo == undefined ? 4 : octavo;
@@ -89,6 +75,31 @@ function note(nota, octavo, time){
 		return beep(440, 1);
 	}
 }
+
 function sleep(time){
 	return tone.sleep(time);
+}
+
+if(!process.argv[2]){
+	console.log("Usage: beepscript [FILE]");
+}
+else if(!fs.existsSync(process.argv[2])){
+	console.log("No such file or directory "+process.argv[2]);
+}
+else{
+	var res = [];
+	var fileString = fs.readFileSync(process.argv[2], "utf-8");
+	fileString = ('{"'+fileString.toLowerCase().split('\n').join('').split('\t').join('').split(' ').join('').split('"').join("'").split(/\/\*.+?\*\/|\/\/.*(?=[\n\r])/g).join('').split('{').join('":"{').split('{').join('[').split('}').join(']","').split(')').join('),').split(',]').join(']')+'}').split(',"}').join('}');
+	var objeto = JSON.parse(fileString);
+	var main = eval(objeto["main"]);
+	main.forEach(function(item){
+		res = res.concat(item);
+	});
+
+	var wavFile = path.join(path.dirname(process.argv[2]), path.parse(process.argv[2]).name+".wav");
+	var writer = new fs.createWriteStream(wavFile);
+	writer.write(header());
+	writer.write(new Buffer(res));
+	writer.end();
+	console.log("Script compiled to "+wavFile);
 }

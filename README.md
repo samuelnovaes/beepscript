@@ -1,7 +1,5 @@
 # BeepScript
 
-> It may not work on Windows.
-
 Script language to create wave musics
 
 # How to install
