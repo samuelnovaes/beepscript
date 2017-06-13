@@ -15,5 +15,9 @@
 	"license": "ISC",
 	"main": "index.js",
 	"name": "beepscript",
-	"version": "2.0.0"
+	"version": "2.0.1",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/samuelnovaes/renderplus.git"
+	}
 }
