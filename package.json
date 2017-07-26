@@ -2,7 +2,7 @@
 	"dependencies": {
 		"waveheader": "^0.0.2"
 	},
-	"description": "Script language to create wav musics",
+	"description": "Create wave musics with JavaScript",
 	"keywords": [
 		"music",
 		"wav",
@@ -15,7 +15,7 @@
 	"license": "ISC",
 	"main": "index.js",
 	"name": "beepscript",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/samuelnovaes/beepscript.git"
