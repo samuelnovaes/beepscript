@@ -2,6 +2,10 @@
 
 Create wave musics with JavaScript
 
+[![BeepScript](https://nodei.co/npm/beepscript.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/beepscript)
+
+# [Demo](https://github.com/samuelnovaes/beepscript/tree/master/demo)
+
 # Full Example
 
 ```javascript
