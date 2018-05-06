@@ -20,7 +20,7 @@ This program is based on the music-sheet at
 The speed of the song was inspired by the video at
 [https://www.youtube.com/watch?v=NmCCQxVBfyM].
 */
-const BeepScript = require('beepscript')
+const BeepScript = require('../')
 const bs = new BeepScript()
 
 const durationFourQuarter = (10 / 3) * 0.95
@@ -31,198 +31,198 @@ const DURATION_EIGHTH = 0.100 // (1/8)-0.025
 // const DURATION_SEMIQUAVER = 0.0375 // (1/16)-0.025
 const DURATION_QUARTER_PLUS_HALF = 0.350 // ((1/4)*1.5)-0.025
 
-function partOne () {
+function partOne() {
 	//1
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('E5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('B4', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('D5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('D5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('B4', DURATION_EIGHTH * durationFourQuarter)
 
 	//2
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A4', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('A4', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A4', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('A4', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('E5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('D5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('D5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	//3
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_QUARTER_PLUS_HALF * durationFourQuarter)
+	bs.beep('B4', DURATION_QUARTER_PLUS_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('D5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('D5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('E5', DURATION_QUARTER * durationFourQuarter)
 
 	//4
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('C5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A4', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('A4', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A4', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('A4', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A4', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('A4', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('B4', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	//5
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('D5', DURATION_QUARTER_PLUS_HALF * durationFourQuarter)
+	bs.beep('D5', DURATION_QUARTER_PLUS_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('F5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('F5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('A5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('G5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('G5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('F5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('F5', DURATION_EIGHTH * durationFourQuarter)
 
 	//6
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_QUARTER_PLUS_HALF * durationFourQuarter)
+	bs.beep('E5', DURATION_QUARTER_PLUS_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('E5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('D5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('D5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	//7
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('B4', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('B4', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_EIGHTH * durationFourQuarter)
+	bs.beep('C5', DURATION_EIGHTH * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('D5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('D5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('E5', DURATION_QUARTER * durationFourQuarter)
 
 	//8
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('C5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A4', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('A4', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A4', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('A4', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
 	bs.sleep(DURATION_QUARTER * durationFourQuarter)
 }
 
-function partTwo () {
+function partTwo() {
 	//1
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_HALF * durationFourQuarter)
+	bs.beep('E5', DURATION_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_HALF * durationFourQuarter)
+	bs.beep('C5', DURATION_HALF * durationFourQuarter)
 
 	//2
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('D5', DURATION_HALF * durationFourQuarter)
+	bs.beep('D5', DURATION_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_HALF * durationFourQuarter)
+	bs.beep('B4', DURATION_HALF * durationFourQuarter)
 
 	//3
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_HALF * durationFourQuarter)
+	bs.beep('C5', DURATION_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A4', DURATION_HALF * durationFourQuarter)
+	bs.beep('A4', DURATION_HALF * durationFourQuarter)
 
 	//4
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('G#4', DURATION_HALF * durationFourQuarter)
+	bs.beep('G#4', DURATION_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('B4', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
 	bs.sleep(DURATION_QUARTER * durationFourQuarter)
 
 	//5
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_HALF * durationFourQuarter)
+	bs.beep('E5', DURATION_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_HALF * durationFourQuarter)
+	bs.beep('C5', DURATION_HALF * durationFourQuarter)
 
 	//6
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('D5', DURATION_HALF * durationFourQuarter)
+	bs.beep('D5', DURATION_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('B4', DURATION_HALF * durationFourQuarter)
+	bs.beep('B4', DURATION_HALF * durationFourQuarter)
 
 	//7
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('C5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('C5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('E5', DURATION_QUARTER * durationFourQuarter)
+	bs.beep('E5', DURATION_QUARTER * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('A5', DURATION_HALF * durationFourQuarter)
+	bs.beep('A5', DURATION_HALF * durationFourQuarter)
 
 	//8
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
-	bs.note('G#5', DURATION_HALF * durationFourQuarter)
+	bs.beep('G#5', DURATION_HALF * durationFourQuarter)
 
 	bs.sleep(DURATION_BRAKE * durationFourQuarter)
 	bs.sleep(DURATION_HALF * durationFourQuarter)

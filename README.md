@@ -9,28 +9,37 @@ Create wave musics with JavaScript
 # Full Example
 
 ```javascript
-const BeepScript = require('beepscript'); //Import BeepScript module
+const BeepScript = require('beepscript') //Import BeepScript module
 
-const bs = new BeepScript();              //Create BeepScript object
+const bs = new BeepScript()              //Create BeepScript object
 
-bs.beep(440, 1);                          //Play 400 Hz for 1 second
-bs.sleep(1/2);                            //Sleep for 1/2 second
-bs.note('C#4', 1/4);                      //Play note C#4 for 1/4 second
-bs.sleep(1);                              //Sleep for 1 second
-bs.beep(500, 1/2);                        //Play 500 Hz for 1/2 seconds
-bs.sleep(0.5);                            //Sleep for 0.5 seconds
-bs.note('Eb5', 2);                        //Play note Eb5 for 2 seconds
+bs.beep(440, 1)                          //Play 400 Hz for 1 second
+bs.sleep(1/2)                            //Sleep for 1/2 second
+bs.beep('C#4', 1/4)                      //Play note C#4 for 1/4 second
+bs.sleep(1)                              //Sleep for 1 second
+bs.beep(500, 1/2)                        //Play 500 Hz for 1/2 seconds
+bs.sleep(0.5)                            //Sleep for 0.5 seconds
+bs.beep('Eb5', 2)                        //Play note Eb5 for 2 seconds
 
-bs.write('music.wav');                    //Write to file music.wav
+bs.seq([                                 //Play a sequency of beeps and sleeps
+	[440, 1],                            //A beep is an array with note or frequency and duration
+	1/2,                                 //A sleep is a number
+	['C#4', 1/4],
+	1,
+	[500, 1/2],
+	0.5,
+	['Eb5', 2]
+])
 
+bs.write('music.wav')                    //Write to file music.wav
 ```
 
-# Commands
-- **beep(frequency:number = 440, duration:number = 1)**
-- **sleep(duration:number = 1)**
-- **note(note:string = 'A4', duration:number = 1)**
+# Methods
+- **bs.beep(frequencyOrNote, duration)**
+- **bs.sleep(duration)**
+- **bs.seq(sequency)**
 
- Supported notes:
+# Supported notes
 ```
 C0 C#0 Db0 D0 D#0 Eb0 E0 F0 F#0 Gb0 G0 G#0 Ab0 A0 A#0 Bb0 B0
 C1 C#1 Db1 D1 D#1 Eb1 E1 F1 F#1 Gb1 G1 G#1 Ab1 A1 A#1 Bb1 B1
