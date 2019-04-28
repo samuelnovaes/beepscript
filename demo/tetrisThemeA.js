@@ -20,7 +20,7 @@ This program is based on the music-sheet at
 The speed of the song was inspired by the video at
 [https://www.youtube.com/watch?v=NmCCQxVBfyM].
 */
-const BeepScript = require('../')
+const BeepScript = require('beepscript')
 const bs = new BeepScript()
 
 const durationFourQuarter = (10 / 3) * 0.95
